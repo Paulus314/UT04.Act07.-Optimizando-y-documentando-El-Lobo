@@ -1,10 +1,12 @@
-class jugador_del_juego:  
+class jugador_del_juego:
+    '''Esta clase es la que gestiona a los jugadores'''
     def __init__(self, nombre, Rol): 
         self.Nombre = nombre 
         self.rol=Rol 
         self.esta_vivo=True
         
-    def AccionNocturna(self, objetivo=None):  
+    def AccionNocturna(self, objetivo=None):
+        '''Esta función gestiona las acciones que ocurren durante la fase nocturna'''  
         if not self.esta_vivo:
             return f"{self.Nombre} está muerto."
             
