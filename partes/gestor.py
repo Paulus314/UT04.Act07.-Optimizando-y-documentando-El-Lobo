@@ -1,4 +1,4 @@
-import jugador_del_juego
+from partes import jugador_del_juego
 
 class gestorPartida:  
     def __init__(self):
